@@ -1,0 +1,59 @@
+.navbar {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  gap: 30px;
+  padding: 0;
+}
+
+.menu li {
+  list-style: none;
+  position: relative;
+  padding: 10px 20px;
+}
+
+.menu li:hover {
+  border: 1px solid turquoise;
+}
+
+.menu a {
+  text-decoration: none;
+}
+
+.submenu--1 {
+  position: relative;
+}
+
+.categories {
+  background-color: turquoise;
+  visibility: hidden;
+  left: 0%;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.submenu--1:hover > .categories {
+  color: black;
+  visibility: visible;
+  font-size: 22px;
+  opacity: 1;
+}
+
+.categories li {
+  text-align: left;
+}
+
+.categories li:hover {
+  border: none;
+  background-color: aliceblue;
+  transition: all 0.5s;
+}

@@ -1,27 +1,49 @@
+import logoHeader from "./logo-header.png";
 import "./Navbar.css";
+import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
+import CartWidget from "./CartWidget";
 
-const Navbar = () => {
+const NavbarExample = () => {
   return (
-    <nav className="navbar">
-      <h3>E-commerce</h3>
-      <ul className="menu">
-        <li>
-          <a>Inicio</a>
-        </li>
-        <li className="submenu--1">
-          <a>Productos</a>
-          <ul className="categories">
-            <li>Hombre</li>
-            <li>Mujer</li>
-            <li>Niños</li>
-          </ul>
-        </li>
-        <li>
-          <a>Contacto</a>
-        </li>
-      </ul>
-    </nav>
+    <Navbar bg="light" expand="lg">
+      <Container>
+        <Navbar.Brand href="#home">
+          <img src={logoHeader} alt="logo img"></img>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link className="h5" href="#home">
+              Inicio
+            </Nav.Link>
+            <NavDropdown
+              className="h5"
+              title="Productos"
+              id="basic-nav-dropdown"
+            >
+              <NavDropdown.Item className="h5" href="#action/3.1">
+                Hombre
+              </NavDropdown.Item>
+              <NavDropdown.Item className="h5" href="#action/3.2">
+                Mujer
+              </NavDropdown.Item>
+              <NavDropdown.Item className="h5" href="#action/3.3">
+                Niños
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item className="h5" href="#action/3.4">
+                Ver todo
+              </NavDropdown.Item>
+            </NavDropdown>
+            <Nav.Link className="h5" href="#link">
+              Contacto
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+        <CartWidget />
+      </Container>
+    </Navbar>
   );
 };
 
-export default Navbar;
+export default NavbarExample;

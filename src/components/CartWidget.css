@@ -1,0 +1,14 @@
+.cart {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.shoppingCart {
+  color: black;
+}
+
+.item {
+  margin-bottom: 5px;
+  color: black;
+}

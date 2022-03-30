@@ -1,12 +1,13 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Navbar from "./components/Navbar";
+import "bootstrap/dist/css/bootstrap.min.css";
+import NavbarExample from "./components/Navbar";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Navbar />
+        <NavbarExample />
         <img src={logo} className="App-logo" alt="logo" />
         <p>Esta es mi primera aplicación de React.</p>
         <a

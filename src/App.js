@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import NavbarExample from "./components/Navbar";
+import ItemListContainer from "./components/itemListContainet";
 
 function App() {
   return (
@@ -9,15 +10,8 @@ function App() {
       <header className="App-header">
         <NavbarExample />
         <img src={logo} className="App-logo" alt="logo" />
+        <ItemListContainer greeting={"¡Hola Coders!"} />
         <p>Esta es mi primera aplicación de React.</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          ¡Saludos!
-        </a>
       </header>
     </div>
   );

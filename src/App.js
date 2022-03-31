@@ -2,8 +2,8 @@ import logo from "./logo.svg";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import NavbarExample from "./components/Navbar";
-import ItemListContainer from "./components/itemListContainet";
 import ItemCount from "./components/ItemCount/ItemCount";
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 
 function App() {
   return (
@@ -11,9 +11,9 @@ function App() {
       <header className="App-header">
         <NavbarExample />
         <img src={logo} className="App-logo" alt="logo" />
-        <ItemListContainer greeting={"¡Hola Coders!"} />
         <p>Esta es mi primera aplicación de React.</p>
         <ItemCount />
+        <ItemListContainer />
       </header>
     </div>
   );

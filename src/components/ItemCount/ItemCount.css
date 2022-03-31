@@ -1,0 +1,33 @@
+.addToCart {
+  border: 1px solid red;
+  width: 300px;
+  padding: 20px;
+}
+
+.counterContainer {
+  border: 1px solid green;
+  background-color: aqua;
+}
+
+button {
+  color: black;
+  font-weight: 600;
+}
+
+.decrease {
+  border: none;
+  background: none;
+  width: 20%;
+}
+
+.clearAmount {
+  background: none;
+  border: none;
+  width: 60%;
+}
+
+.increase {
+  background: none;
+  border: none;
+  width: 20%;
+}

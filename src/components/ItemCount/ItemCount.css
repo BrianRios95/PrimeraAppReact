@@ -7,6 +7,8 @@
 .counterContainer {
   border: 1px solid green;
   background-color: aqua;
+  display: flex;
+  flex-direction: column;
 }
 
 button {
@@ -17,17 +19,20 @@ button {
 .decrease {
   border: none;
   background: none;
-  width: 20%;
+  width: 100%;
+  text-align: center;
 }
 
 .clearAmount {
   background: none;
   border: none;
-  width: 60%;
+  width: 100%;
+  text-align: center;
 }
 
 .increase {
   background: none;
   border: none;
-  width: 20%;
+  width: 100%;
+  text-align: center;
 }

@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import NavbarExample from "./components/Navbar";
 import ItemCount from "./components/ItemCount/ItemCount";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
+import ItemDetailContainer from "./components/ItemDatailContainer/ItemDetailContainer";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <p>Esta es mi primera aplicación de React.</p>
         <ItemCount />
         <ItemListContainer />
+        <ItemDetailContainer />
       </header>
     </div>
   );
